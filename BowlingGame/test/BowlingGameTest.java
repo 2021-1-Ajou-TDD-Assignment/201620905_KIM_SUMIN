@@ -30,12 +30,12 @@ public class BowlingGameTest {
 		assertEquals(20, g.score());
 	}
 	
-	@Ignore("until we get design right")
+	@Ignore("until we walk frame by frame")
 	@Test
 	public void testOneSpare() {
 		g.roll(5);
 		g.roll(5); //spare
-		g.roll(5);
+		g.roll(3);
 		rollMany(17, 0);
 		assertEquals(16, g.score());
 	}
